@@ -15,7 +15,7 @@ knit        : slidify::knit2slides
 
 This is the documentation for an app created for the final project in coursera's data products course.
 
-The app not only performs calcualtions, but it lets the user edit the calculations by presenting an RMarkdown scripting environment within the app.
+The app not only performs calculations, but it lets the user edit the calculations by presenting an RMarkdown scripting environment within the app.
 
 ---
 
@@ -23,6 +23,11 @@ The app not only performs calcualtions, but it lets the user edit the calculatio
 
 To edit the markdown rendering, edit the markdown text within the textbox.
 If rendering is taking a long time, you may wish to temporarily disable rendering by toggling the "Update continuously" checkbox.
+
+Use normal rmarkdown, like:
+```{r}
+str(mtcars)
+```
 
 ---
 
