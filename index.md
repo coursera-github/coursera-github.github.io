@@ -1,0 +1,44 @@
+---
+title       : reproducible-researchR
+subtitle    : An app
+date        : 2017-11-30
+#author      : gmyrland
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Introduction
+
+This is the documentation for an app created for the final project in coursera's data products course.
+
+The app not only performs calcualtions, but it lets the user edit the calculations by presenting an RMarkdown scripting environment within the app.
+
+---
+
+## Usage
+
+To edit the markdown rendering, edit the markdown text within the textbox.
+If rendering is taking a long time, you may wish to temporarily disable rendering by toggling the "Update continuously" checkbox.
+
+---
+
+## Calculations
+
+The app essentially runs reactive code when the textbox contents change.
+It saves the textbox contents to file and runs a markdown rendering to html, updating the UiOutput.
+It's not much different than doing this in RStudio, but it is your shiny session that is doing the rendering.
+
+---
+
+## Reporting Results
+
+Once you are satisfied with your markdown document, you can print it to pdf, docx, or html.
+The app will perform a server-side rendering of your RMarkdown and download the resulting document.
+You can then print the report and hand it to your boss to put on the company fridge.
+
+Have a great day!
